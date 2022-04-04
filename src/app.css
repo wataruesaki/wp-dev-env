@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .hoge {
+      @apply flex;
+    }
+}
+
+/*@layer components {*/
+
+/*}*/
+
+/*@layer utilities {*/
+
+/*}*/
