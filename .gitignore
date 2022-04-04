@@ -105,3 +105,5 @@ dist
 
 .idea
 mix-manifest.json
+theme/assets/css
+theme/assets/js
