@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    .hoge {
-      @apply flex;
-    }
-}
+/*@layer base {*/
+/*  */
+/*}*/
 
 /*@layer components {*/
 
