@@ -3,7 +3,8 @@
   "author": "Wataru Esaki",
   "license": "MIT",
   "scripts": {
-    "dev": "npx mix watch"
+    "dev": "npx mix watch",
+    "build": "npx mix -p"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
