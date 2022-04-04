@@ -6,12 +6,15 @@
     "dev": "npx mix watch"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.4",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "laravel-mix": "^6.0.43",
-    "prettier": "^2.6.2"
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^3.0.23"
   }
 }
