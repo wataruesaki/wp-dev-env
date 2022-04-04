@@ -2,6 +2,9 @@
   "repository": "git@github.com:wataruesaki/wp-dev-env.git",
   "author": "Wataru Esaki",
   "license": "MIT",
+  "scripts": {
+    "dev": "npx mix watch"
+  },
   "devDependencies": {
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
