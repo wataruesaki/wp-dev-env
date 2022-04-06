@@ -104,6 +104,8 @@ dist
 .tern-port
 
 .idea
+db
+wp
 mix-manifest.json
 theme/assets/css
 theme/assets/js
