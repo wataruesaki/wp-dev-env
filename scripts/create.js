@@ -7,7 +7,6 @@ const assetsData = require('./data')
 
 const create = async () => {
   const args = utils.getArgsFromTerminal()
-
   const imageDir = `src/images/${args.file}`
   let isIgnoredImageDir = false
 
@@ -30,10 +29,6 @@ const create = async () => {
     {
       path: `theme/${args.prefix ? `${args.prefix}-` : ''}${args.file}.php`,
       data: new Uint8Array(Buffer.from(assetsData.wp)),
-    },
-    {
-      path: `src/sass/${args.file}.scss`,
-      data: new Uint8Array(Buffer.from(assetsData.sass)),
     },
   ]
 

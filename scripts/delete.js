@@ -8,14 +8,11 @@ const utils = require('./utils')
 
 const delAssets = async () => {
   const args = utils.getArgsFromTerminal()
-
   const targetPathArr = [
     `src/images/${args.file}`,
     `src/js/${args.file}.js`,
     `theme/${args.prefix ? `${args.prefix}-` : ''}${args.file}.php`,
-    `src/sass/${args.file}.scss`,
   ]
-
   const delPathArr = []
 
   targetPathArr.forEach((path) => {
@@ -52,9 +49,9 @@ ${chalk.red('Run seriously? (y/N):')}`
     return
   }
 
-  delPathArr.forEach(async (path) => {
+  delPathArr.forEach((path) => {
     try {
-      await del(path)
+      del(path)
     } catch (err) {
       throw new Error(chalk.red(err.message))
     }
