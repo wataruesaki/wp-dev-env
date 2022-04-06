@@ -5,10 +5,10 @@ services:
     image: mariadb:10.2 # Compatible with MySQL 5.7
     restart: always
     environment:
-      MYSQL_DATABASE: wp
-      MYSQL_USER: username
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
     volumes:
       - ./db:/var/lib/mysql
 
@@ -23,8 +23,8 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: username
-      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: secret
       WORDPRESS_DEBUG: 1
     volumes:
       - ./wp:/var/www/html
