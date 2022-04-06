@@ -8,7 +8,9 @@
     "dev:mix": "npx mix watch",
     "build:mix": "npx mix -p",
     "dev:gulp": "npx gulp dev",
-    "build:gulp": "npx gulp build"
+    "build:gulp": "npx gulp build",
+    "create": "node scripts/create",
+    "delete": "node scripts/delete"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
