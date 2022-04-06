@@ -8,7 +8,7 @@ module.exports = {
   ui: {
     port: 3001,
   },
-  files: ['src/app.css', 'src/js/*.js'],
+  files: ['src/app.css', 'src/js/*.js', 'theme/**/*.php'],
   watchEvents: ['change'],
   watch: true,
   ignore: [],
